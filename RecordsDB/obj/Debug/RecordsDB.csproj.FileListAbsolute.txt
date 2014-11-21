@@ -1,0 +1,7 @@
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\bin\Debug\RecordsDB.dll
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\bin\Debug\RecordsDB.pdb
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\bin\Debug\Models.dll
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\bin\Debug\Models.pdb
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\obj\Debug\RecordsDB.csprojResolveAssemblyReference.cache
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\obj\Debug\RecordsDB.dll
+C:\Users\vuric_000\Documents\Visual Studio 2013\Projects\OAuthLoginExercise\RecordsDB\obj\Debug\RecordsDB.pdb

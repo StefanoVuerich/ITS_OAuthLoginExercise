@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container" style="min-width: 500px">
+    <div class="panel panel-default" style="margin-top:10px; min-width:500px">
+        <div class="panel-heading" id="welcomeMessage"></div>
+        <div class="panel-body">
+            <ul class="nav nav-tabs" role="tablist" id="myTab" style="min-width: 470px">
+                <li role="presentation" class="active" id="allRecordsTab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Visualizza records</a></li>
+                <li role="presentation" id="insertRecordTab"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Inserisci record</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Dettaglio record</a></li>
+            </ul>
+            <div class="tab-content" style="min-width: 470px">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <table class="table table-hover" style="min-width:470px">
+                        <thead style="min-width: 470px">
+                            <tr style="min-width: 470px">
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody style="min-width: 470px" id="tableBody">
+                          @*records inseriti dalla chiamata ajax*@
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <form role="form" style="margin-top:10px" id="insertForm">
+                        <div class="form-group">
+                            <label for="recordID">Id</label>
+                            <input type="text" class="form-control" id="recordID" placeholder="ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="recordName">Name</label>
+                            <input type="text" class="form-control" id="recordName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recordDescription">Description</label>
+                            <input type="text" class="form-control" id="recordDescription" placeholder="Description">
+                        </div>
+                        <div class="form-group">
+                            <label for="recordPrice">Price</label>
+                            <input type="text" class="form-control" id="recordPrice" placeholder="Price">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="insertRecord">Insert Record</button>
+                        <div class="form-group">
+                            <p class="text-danger" id="inserFeedback" style="margin-top:10px;"></p>
+                        </div>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <form role="form" style="margin-top:10px">
+                        <div class="form-group">
+                            <label for="recordID">Record ID</label>
+                            <input type="text" class="form-control" id="findRecordID" placeholder="Record ID">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="findRecordByIDBtn">Find Record</button>
+                        <div class="form-group">
+                            <p class="text-danger" id="findByIDFeedback" style="margin-top:10px;"></p>
+                        </div>
+                    </form>
+                    <table class="table table-hover" style="min-width:470px; margin-top:10px">
+                        <thead style="min-width: 470px">
+                            <tr style="min-width: 470px">
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody style="min-width: 470px" id="singleEntityTableBody">
+                            @*records inseriti dalla chiamata ajax*@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/logged.js"></script>
+
+
